@@ -106,6 +106,7 @@
 				884B12D92931E8FE002A7BDB /* Frameworks */,
 				884B12DA2931E8FE002A7BDB /* Resources */,
 				884B12EF2931F9A7002A7BDB /* Run Script LicensePlist */,
+				884B12F02931FA42002A7BDB /* Run Script Swiftlint */,
 			);
 			buildRules = (
 			);
@@ -203,6 +204,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "sh Scripts/Licenseplist.sh\n";
+		};
+		884B12F02931FA42002A7BDB /* Run Script Swiftlint */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Run Script Swiftlint";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh Scripts/Swiftlint.sh\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
