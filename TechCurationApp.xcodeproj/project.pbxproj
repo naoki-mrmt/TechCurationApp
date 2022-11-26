@@ -11,14 +11,18 @@
 		884B12E22931E8FE002A7BDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884B12E12931E8FE002A7BDB /* ContentView.swift */; };
 		884B12E42931E8FF002A7BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884B12E32931E8FF002A7BDB /* Assets.xcassets */; };
 		884B12E72931E8FF002A7BDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884B12E62931E8FF002A7BDB /* Preview Assets.xcassets */; };
+		FE31E160B11C9E99BAB516C7 /* Pods_TechCurationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0B276C563B03D4B64C08B0 /* Pods_TechCurationApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29A58FDC175B2B4F42C212EA /* Pods-TechCurationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCurationApp.release.xcconfig"; path = "Target Support Files/Pods-TechCurationApp/Pods-TechCurationApp.release.xcconfig"; sourceTree = "<group>"; };
 		884B12DC2931E8FE002A7BDB /* TechCurationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechCurationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		884B12DF2931E8FE002A7BDB /* TechCurationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechCurationAppApp.swift; sourceTree = "<group>"; };
 		884B12E12931E8FE002A7BDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		884B12E32931E8FF002A7BDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		884B12E62931E8FF002A7BDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CBB7A0DA31115AA5BAA00C33 /* Pods-TechCurationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCurationApp.debug.xcconfig"; path = "Target Support Files/Pods-TechCurationApp/Pods-TechCurationApp.debug.xcconfig"; sourceTree = "<group>"; };
+		DC0B276C563B03D4B64C08B0 /* Pods_TechCurationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechCurationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +30,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE31E160B11C9E99BAB516C7 /* Pods_TechCurationApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +42,8 @@
 			children = (
 				884B12DE2931E8FE002A7BDB /* TechCurationApp */,
 				884B12DD2931E8FE002A7BDB /* Products */,
+				AEB7B267A0571317C8D2CE44 /* Pods */,
+				D3BD2DE16A04BC84AADC17E6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +74,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		AEB7B267A0571317C8D2CE44 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBB7A0DA31115AA5BAA00C33 /* Pods-TechCurationApp.debug.xcconfig */,
+				29A58FDC175B2B4F42C212EA /* Pods-TechCurationApp.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		D3BD2DE16A04BC84AADC17E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC0B276C563B03D4B64C08B0 /* Pods_TechCurationApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +99,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 884B12EA2931E8FF002A7BDB /* Build configuration list for PBXNativeTarget "TechCurationApp" */;
 			buildPhases = (
+				507DD61944D169DFE8739B84 /* [CP] Check Pods Manifest.lock */,
 				884B12D82931E8FE002A7BDB /* Sources */,
 				884B12D92931E8FE002A7BDB /* Frameworks */,
 				884B12DA2931E8FE002A7BDB /* Resources */,
@@ -131,6 +157,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		507DD61944D169DFE8739B84 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TechCurationApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		884B12D82931E8FE002A7BDB /* Sources */ = {
@@ -261,6 +312,7 @@
 		};
 		884B12EB2931E8FF002A7BDB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBB7A0DA31115AA5BAA00C33 /* Pods-TechCurationApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +342,7 @@
 		};
 		884B12EC2931E8FF002A7BDB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29A58FDC175B2B4F42C212EA /* Pods-TechCurationApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
