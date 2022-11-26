@@ -8,10 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		884B12E02931E8FE002A7BDB /* TechCurationAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884B12DF2931E8FE002A7BDB /* TechCurationAppApp.swift */; };
-		884B12E22931E8FE002A7BDB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884B12E12931E8FE002A7BDB /* ContentView.swift */; };
-		884B12E42931E8FF002A7BDB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884B12E32931E8FF002A7BDB /* Assets.xcassets */; };
 		884B12E72931E8FF002A7BDB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884B12E62931E8FF002A7BDB /* Preview Assets.xcassets */; };
 		884B12EE2931F969002A7BDB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 884B12ED2931F969002A7BDB /* Settings.bundle */; };
+		884B12F82931FB6A002A7BDB /* LaunchScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 884B12F72931FB6A002A7BDB /* LaunchScreenView.swift */; };
+		884B13022931FC30002A7BDB /* Appicon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 884B13012931FC30002A7BDB /* Appicon.xcassets */; };
 		FE31E160B11C9E99BAB516C7 /* Pods_TechCurationApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC0B276C563B03D4B64C08B0 /* Pods_TechCurationApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -19,10 +19,15 @@
 		29A58FDC175B2B4F42C212EA /* Pods-TechCurationApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCurationApp.release.xcconfig"; path = "Target Support Files/Pods-TechCurationApp/Pods-TechCurationApp.release.xcconfig"; sourceTree = "<group>"; };
 		884B12DC2931E8FE002A7BDB /* TechCurationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TechCurationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		884B12DF2931E8FE002A7BDB /* TechCurationAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TechCurationAppApp.swift; sourceTree = "<group>"; };
-		884B12E12931E8FE002A7BDB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		884B12E32931E8FF002A7BDB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		884B12E62931E8FF002A7BDB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		884B12ED2931F969002A7BDB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
+		884B12F32931FACD002A7BDB /* .gitkeep.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitkeep.md; sourceTree = "<group>"; };
+		884B12F52931FB47002A7BDB /* .gitkeep.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitkeep.md; sourceTree = "<group>"; };
+		884B12F72931FB6A002A7BDB /* LaunchScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenView.swift; sourceTree = "<group>"; };
+		884B12FB2931FB9C002A7BDB /* .gitkeep.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitkeep.md; sourceTree = "<group>"; };
+		884B12FD2931FBCC002A7BDB /* .gitkeep.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitkeep.md; sourceTree = "<group>"; };
+		884B12FF2931FBE3002A7BDB /* .gitkeep.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = .gitkeep.md; sourceTree = "<group>"; };
+		884B13012931FC30002A7BDB /* Appicon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Appicon.xcassets; sourceTree = "<group>"; };
 		CBB7A0DA31115AA5BAA00C33 /* Pods-TechCurationApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TechCurationApp.debug.xcconfig"; path = "Target Support Files/Pods-TechCurationApp/Pods-TechCurationApp.debug.xcconfig"; sourceTree = "<group>"; };
 		DC0B276C563B03D4B64C08B0 /* Pods_TechCurationApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TechCurationApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -60,9 +65,14 @@
 		884B12DE2931E8FE002A7BDB /* TechCurationApp */ = {
 			isa = PBXGroup;
 			children = (
-				884B12DF2931E8FE002A7BDB /* TechCurationAppApp.swift */,
-				884B12E12931E8FE002A7BDB /* ContentView.swift */,
-				884B12E32931E8FF002A7BDB /* Assets.xcassets */,
+				884B12F12931FAA5002A7BDB /* Application */,
+				884B12F22931FAAE002A7BDB /* Model */,
+				884B12F42931FAD9002A7BDB /* Manager */,
+				884B12F62931FB5A002A7BDB /* Screen */,
+				884B12FA2931FB8A002A7BDB /* Extension */,
+				884B12FE2931FBD4002A7BDB /* Protocol */,
+				884B12FC2931FBB9002A7BDB /* Utility */,
+				884B13002931FBFD002A7BDB /* Assets */,
 				884B12E52931E8FF002A7BDB /* Preview Content */,
 				884B12ED2931F969002A7BDB /* Settings.bundle */,
 			);
@@ -75,6 +85,78 @@
 				884B12E62931E8FF002A7BDB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		884B12F12931FAA5002A7BDB /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				884B12DF2931E8FE002A7BDB /* TechCurationAppApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		884B12F22931FAAE002A7BDB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				884B12F32931FACD002A7BDB /* .gitkeep.md */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		884B12F42931FAD9002A7BDB /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				884B12F52931FB47002A7BDB /* .gitkeep.md */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		884B12F62931FB5A002A7BDB /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				884B12F92931FB6D002A7BDB /* LaunchScreen */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		884B12F92931FB6D002A7BDB /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				884B12F72931FB6A002A7BDB /* LaunchScreenView.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		884B12FA2931FB8A002A7BDB /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				884B12FB2931FB9C002A7BDB /* .gitkeep.md */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		884B12FC2931FBB9002A7BDB /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				884B12FD2931FBCC002A7BDB /* .gitkeep.md */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		884B12FE2931FBD4002A7BDB /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				884B12FF2931FBE3002A7BDB /* .gitkeep.md */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		884B13002931FBFD002A7BDB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				884B13012931FC30002A7BDB /* Appicon.xcassets */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		AEB7B267A0571317C8D2CE44 /* Pods */ = {
@@ -157,7 +239,7 @@
 			files = (
 				884B12E72931E8FF002A7BDB /* Preview Assets.xcassets in Resources */,
 				884B12EE2931F969002A7BDB /* Settings.bundle in Resources */,
-				884B12E42931E8FF002A7BDB /* Assets.xcassets in Resources */,
+				884B13022931FC30002A7BDB /* Appicon.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,8 +313,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				884B12E22931E8FE002A7BDB /* ContentView.swift in Sources */,
 				884B12E02931E8FE002A7BDB /* TechCurationAppApp.swift in Sources */,
+				884B12F82931FB6A002A7BDB /* LaunchScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
