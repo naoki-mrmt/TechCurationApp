@@ -1,5 +1,5 @@
 # TechCurationApp
-develop: [![CI](https://github.com/naoki-mrmt/TechCurationApp/actions/workflows/swift.yml/badge.svg?branch=develop)](https://github.com/naoki-mrmt/TechCurationApp/actions/workflows/swift.yml)
+[![CI](https://github.com/naoki-mrmt/TechCurationApp/actions/workflows/swift.yml/badge.svg?branch=develop)](https://github.com/naoki-mrmt/TechCurationApp/actions/workflows/swift.yml)
 ## 環境構築
 ### 事前準備
 - Bundlerをインストール
