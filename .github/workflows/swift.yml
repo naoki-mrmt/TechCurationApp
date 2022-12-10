@@ -53,8 +53,9 @@ jobs:
         -scheme TechCurationApp
         build
         | bundle exec xcpretty
-    - name: Convert Code coverage to HTML
-      run: bundle exec slather coverage --html --output-directory html_report
+    # テストが入っていないため一旦コメントアウト
+#    - name: Convert Code coverage to HTML
+#      run: bundle exec slather coverage --html --output-directory html_report
     - uses: actions/upload-artifact@v3
       with:
         name: test-results
